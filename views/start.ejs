@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>start quiz</title>
+    <!-- icons links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap  link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="home.css">
+
+    <!-- bootstrap script link -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+
+    <!-- script -->
+    <script type="text/javascript" src="marks.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="start-body">
+  <nav class="navbar navbar-expand-lg navbar-light nav-bg p-3">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item pl-2 pr-2">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item pl-2 pr-2">
+          <a class="nav-link" href="/qus">Post Question</a>
+        </li>
+        <li class="nav-item pl-2 pr-2">
+          <a class="nav-link" href="/start">Questions</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <nav class="navbar navbar-expand-sm bg-secondary">
+        <h3 class="sttitle">Questions</h3>
+    </nav>
+    <div class="row">
+    <% arr.forEach((val) => { %>
+      <div class="col-lg-8 col-md-7">
+    <div class="qus-div mb-5">
+    <label class="qus-no">Question No : <%= count++ %></label>
+    <p class="qus-display"><%= val.qus %></p>
+    <button class="btn btn-lg btn-info option mt-5"><%= val.option1 %></button>
+    <button class="btn btn-lg btn-info mt-5 option2"><%= val.option2 %></button>
+    <button class="btn btn-lg btn-info mt-5 option2"><%= val.option3 %></button>
+    <br>
+    <div class="ml-5 mt-5">
+      <h3>Answer :</h3>
+      <span style="font-family: 'Luxurious Roman', cursive;font-size: 135%;"><%= val.crtans %></span>
+      </div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3">
+  <div class="ans-div mt-5 p-2">  
+  <!-- <button class="btn btn-success mt-5 btn-lg" onclick="ans()">Answer</button>
+  <button class="btn btn-primary mt-5 btn-lg ml-5" onclick="exp()">Explaination</button> -->
+    <!-- <div class="row"> -->
+      <div class=" col-lg-2 col-md-1"></div>
+      <div id="explain">
+      <h2>Explanation:</h2>
+      <p style="font-family: 'Luxurious Roman', cursive;font-size: 135%;"><%= val.explain %></p>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+<!-- <div class="col-lg-1 col-md-1"></div> -->
+    <% }) %>
+    </div>
+</body>
+</html>

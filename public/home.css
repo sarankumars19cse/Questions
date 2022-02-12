@@ -1,0 +1,197 @@
+.htitle
+{
+    text-align: center;
+    color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 5% 20% 0 20%;
+    border-radius: 10px;
+    background-color: #ffffffc4;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+    font-family: 'Vollkorn', serif;
+}
+.hctitle{
+    text-decoration: underline ;
+    text-align: center;
+}
+.navbar{
+    background-image: linear-gradient(to right top, #9bbef6b4, #89b4f4a9, #75a9f1a1, #5e9defa9, #4395eca6);
+}
+.navbar-nav{
+    font-size: 130%;
+}
+.nav-item{
+    text-align: center;
+    border-radius: 10px;
+}
+.nav-item:hover{
+    background-image: linear-gradient(to right top, #c8daf6, #bbd1f0, #aec7e9, #a0bee3, #92b5dc);
+}
+.bd{
+    /* background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png"); */
+    background-image: url("./quizbg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hcontent{
+    margin-top: 80px;
+    color: black;
+    line-height: 250%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 150%;
+    background-color: #ffffffc4;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+    /* background-color: rgba(255, 255, 255, 0.541); */
+    /* background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%);  */
+    border-radius: 5px;
+}
+.hbutton{
+    color: rgb(252, 250, 247);
+}
+.ldiv{
+    background-color: rgba(255, 255, 255, 0.514);
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding: 3%;
+}
+.sdiv{
+    background-color: #ffffffc4;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 4%;
+    border-radius: 5px;
+    padding: 3%;
+}
+.lcuser{
+    margin-top: 50px;
+}
+.foot{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.lfoot{
+    color: white;
+    text-align: center;
+    margin-top: 185px;
+}
+.qtitle{
+    text-align: center;
+    margin-top: 50px;
+}
+.sinput{
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.qus{
+    margin-top:100px;
+    font-family: 'Vollkorn', serif;
+    font-size: 200%;
+}
+.qinput{
+    margin-right: 5%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+    resize: none;
+    overflow: hidden;
+    border:0px;
+}
+.qbutton{
+    margin-top: 50px;
+    margin-left: 45%;
+    
+}
+.qno{
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.445);
+    margin-left: 10px;
+}
+.qdivopt{
+    text-align: center;
+    margin-top: 4%;
+}
+.qopt{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.479);
+    text-align: center;
+    width: 50%;
+}
+.sttitle{
+    text-align: center;
+    color: white;
+}
+.stdiv{
+    background-color: rgba(255, 255, 255, 0.479);
+    padding:5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.qdiv{
+    background-color: rgba(255, 255, 255, 0.473);
+    padding: 3%;
+}
+.qcrt{
+    margin-left: 30%;
+    margin-top:1%;
+    font-size: 150%;
+    font-family: 'Vollkorn', serif;
+}
+.qcrt1{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.479);
+    text-align: center;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+.stbutton{
+    margin-top: 7%;
+    margin-left: 49%;
+}
+
+.qus-no{
+    margin: 3% 0 0 5%;
+    font-size: 200%;
+    font-family: 'Lora', serif;
+}
+.qus-display{
+    margin : 2% 0 0 10%;
+    font-size: 200%;
+    font-family: 'Lora', serif;
+}
+.option{
+    margin-left: 15%;
+}
+.option2{
+    margin-left: 20%;
+}
+.qus-div{
+    border: black solid;
+    margin: 3% 8% 0 8%;
+    border-radius: 10px;
+    padding-bottom: 5%;
+}
+.start-body{
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+}
+.nav-bg{
+    background-color: #ffffff96;
+}
+.overview-content{
+    font-family: 'Cormorant Garamond', serif;
+    list-style-type: square;
+}
+
+.ans-div{
+    border: black solid 2px;
+    border-radius: 5px;
+    font-family: 'Lora', serif;
+}
